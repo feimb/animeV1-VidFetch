@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
   res.json({ title: 'Express' });
 });
 router.post('/info' , downloadController.getInfo);
-router.post('/download', downloadController.downloadFile);
+router.post('/download', downloadController.downloadController);
 
 
 module.exports = router;
